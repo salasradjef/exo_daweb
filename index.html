@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+    
+    <!--
+    Nom: Radjef
+    Prenom: Salas
+    Groupe:
+    -->
+</head>
+
+<body>
+
+    <div class="exercice1">
+        <!--
+            Explication des balises du document HTML généré:
+            1)- <!DOCTYPE html>  : Il sert à définir le type du document afin qu’il soit correctement interprété par le navigateur le DOCTYPE doit toujours se situer avant la balise <HTML> , c’est une instruction pour le navigateur à propos de la version de HTML de votre document.
+            2)- <html lang="en"> cette balise indique au navigateur qu’il s’agit d’un document HTML, et que elle représente la racine d’un document HTML. l'attribut lang c'est pour permettre de detecter la langue de la page
+            3)-<head> contient tous les éléments de l’en-tête exemple: titre,scripts, feuille de style, meta, ect... 
+            4)-<meta charset="UTF-8"> permet d'indiquer que l'encodage de la page est en UTF-8    
+            5)-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            6)- <meta name="viewport" content="width=device-width, initial-scale=1.0"> permet d'inquider que la taille de la page sera egale a la taille de l'ecran 
+            7)-<link rel="stylesheet" href="app.css"> permet d'importer fichier de style 
+            8)-<title>Document</title> permet de mettre un titre
+            9)-<body> est le corps de la page , la balise body contient tout les éléments qui seront afficher sur la page
+        -->
+        <!--
+        Exemple de balise inline et block
+        Balises block : <div></div>
+        Balises Inline : <span></span>
+        -->
+        <!--
+            liste des balises inline : <i> <img> <input> <span> <textarea> <em> <strong> ....
+            liste des balises Block : <center> <div> <form> <h1> <h2> <h3> <h4> <h5> <h6> <hr> <p> <ol> <noscript> <ul> <table> ...
+            La différence entre les balises inline et block c'est que une balise de type block occupe toute la largeur disponible Lorsque 2 éléments blocs se suivent dans une page, ils sont positionnés (par défaut) l'un sous l'autre.
+            alors que une balise de type inline n'occupe que la largeur indispensable à l'affichage du contenu et ne provoque pas de retour à la ligne et que une balise inline se trouve obligatoirement à l’intérieur d’une balise block
+
+        -->
+        <h1>Titre</h1>
+        <!--Permet d'afficher un titre-->
+        <p>text simple</p>
+        <!--Permet d'afficher un text simple-->
+        <u>Text souligné</u>
+        <!--Permet d'afficher un text souligné on peut toujours utiliser le css pour soulinger un text avec text-decoration:underline; -->
+        <strong>text en gras</strong>
+        <!--Permet d'afficher un text en gras on peut toujours utiliser le css pour mettre un text en gras avec font-weight:bold;-->
+        <i>Italique</i>
+        <!--Permet d'afficher un text en italique on peut toujours utiliser le css avec font-style:italic;-->
+        <p id="text">Text en gras et en Italic</p>
+        <p id="text__blue">Text en bleu</p>
+        <!--Pour modifier la couleur de l'arrière-plan de la page web il suffit d'ajouter l'attribut style a la balise body(<body style="background-color:blue;" >) pour y ecrire du css ou directement le faire via css 
+            avec
+            body{background-color:blue;}-->
+            <h2>Liste non ordonée</h2>
+         <ul> <!--Liste non ordonée-->
+             <li>Html</li>
+             <li>CSS</li>
+             <li>JS</li>
+             <li>PHP</li>
+         </ul>  
+         <h2>Liste ordonée</h2>
+         <ol> <!--Liste non ordonée-->
+            <li>Html</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>PHP</li>
+        </ol>  
+        <!--
+            Lien absolue : http://127.0.0.1:5500/img/photo.jpg
+            Lien Relatif: ./img/photo.jpg
+        -->
+        <img src="http://127.0.0.1:5500/img/photo.jpg" alt="Chuck Norris"> <!--Absolue-->
+        <img src="./img/photo.jpg" alt="Chuck Norris"> <!--Relatif-->
+    </div>
+    <hr>    
+    <div class="exercice2">
+
+
+
+
+        <table>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+        <table>
+            <tr>
+                <td></td>
+                <td rowspan="2"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+
+        <table>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+    </div>
+    <hr>
+
+    <div class="exercice3">
+        <form action="#">
+            <label for="nom">Nom</label>
+            <input id="nom" type="text"> </br>
+            <label for="prenom">Prenom</label>
+            <input id="prenom" type="text"></br>
+
+            <label for="">Civilité</label>
+            <input id="M" type="radio">
+            <label for="M">M</label>
+            <input id="Mlle" type="radio">
+            <label for="Mlle">Mlle</label>
+            <input id="Mdme" type="radio">
+            <label for="Mdme">Mdme</label>
+            </br>
+            <label for="numero">Numero</label>
+            <input id="numero" type="number">
+            </br>
+            <input type="checkbox" name="" id="jaccepte">
+            <label for="jaccepte">Je souhaite être appelé à son numéro pour me répondre</label>
+            </br>
+
+            <button type="submit">Envoyer</button>
+            <button type="reset">Reset</button>
+
+
+
+
+        </form>
+    </div>
+
+<hr>
+
+
+    <div class="exercice4">
+        <audio src="audi.mp3">Le navigateur ne prends pas en charge ce fichier audio</audio>
+        <video src="">Le navigateur ne prends pas en charge ce fichier audio</video>
+        <iframe src="https://elearning.univ-bejaia.dz/" width="853" height="480" frameborder="0"></iframe>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/h64OLruzMjQ" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</body>
+
+</html>

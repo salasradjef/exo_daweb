@@ -1,0 +1,36 @@
+div {
+    margin-bottom: 50px;
+    
+}
+
+hr {
+    margin: 50px;
+}
+
+
+
+table {
+    
+    margin-left: 20px;
+    height: 100px;
+    width: 800px;
+    border-collapse: collapse;
+}
+
+td ,tr {
+    
+    border: black 1px solid;
+    
+}
+
+#text {
+    font-weight:bold;
+    font-style: italic;
+}
+
+#text__blue {
+    color:blue;
+}
+.exercice3  {
+    margin: 10px;
+}
