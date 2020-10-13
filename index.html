@@ -149,18 +149,18 @@
             <label for="prenom">Prenom</label>
             <input id="prenom" type="text"></br>
 
-            <label for="">Civilité</label>
-            <input id="M" type="radio">
-            <label for="M">M</label>
-            <input id="Mlle" type="radio">
-            <label for="Mlle">Mlle</label>
-            <input id="Mdme" type="radio">
-            <label for="Mdme">Mdme</label>
+            <label for="civil">Civilité</label>
+            <input name="civil" id="M" type="radio">
+            <label for="civil">M</label>
+            <input id="Mlle" name="civil" type="radio">
+            <label for="civil">Mlle</label>
+            <input name="civil" id="Mdme" type="radio">
+            <label for="civil">Mdme</label>
             </br>
             <label for="numero">Numero</label>
             <input id="numero" type="number">
             </br>
-            <input type="checkbox" name="" id="jaccepte">
+            <input type="checkbox" required id="jaccepte">
             <label for="jaccepte">Je souhaite être appelé à son numéro pour me répondre</label>
             </br>
 
@@ -171,15 +171,24 @@
 
 
         </form>
+        <!--
+            La liste des attributs de la balise form:
+            Attribut ACTION : permet de definir l'action a faire aprés la soumission du formulaire,
+            Attribut METHOD: Permet de definir quelle METHODE HTTP a utiliser lors de la soumission du formulaire (GET,POST)
+            NAME: spécifie le nom du formulaire,
+            autocomplete : permet d'activer ou de désactiver l'autocomplete,
+            enctype	Spécifie comment les données de formulaire doivent être encodées lors de leur soumission au serveur (uniquement pour method = "post")
+        -->
     </div>
 
 <hr>
 
 
     <div class="exercice4">
-        <audio src="audi.mp3">Le navigateur ne prends pas en charge ce fichier audio</audio>
-        <video src="">Le navigateur ne prends pas en charge ce fichier audio</video>
-        <iframe src="https://elearning.univ-bejaia.dz/" width="853" height="480" frameborder="0"></iframe>
+        
+        <audio controls src="audi.mp3">Le navigateur ne prends pas en charge ce fichier audio</audio>
+        <video controls src="video.mp4">Le navigateur ne prends pas en charge ce fichier audio</video>
+        <iframe src="https://fr.wikipedia.org/wiki/Chuck_Norris" width="100%" height="480" frameborder="0"></iframe>
         <iframe width="853" height="480" src="https://www.youtube.com/embed/h64OLruzMjQ" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>

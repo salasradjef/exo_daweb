@@ -34,3 +34,10 @@ td ,tr {
 .exercice3  {
     margin: 10px;
 }
+
+.exercice4{
+    padding:10px;
+}
+.exercice4 > audio {
+    margin-right: 100px;
+}
